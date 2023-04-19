@@ -36,16 +36,16 @@ public class Shape {
                 + (isFilled() ? "filled" : "not filled");
     }
 }
-// class ShapeTest {
-//    public static void main(String[] args) {
-//        Shape shape = new Shape();
-//        System.out.println(shape);
-//
-//        shape = new Shape("red", false);
-//        System.out.println(shape);
-//    }
-//}
- class Circle extends Shape {
+ class ShapeTest {
+    public static void main(String[] args) {
+        Shape shape = new Shape();
+        System.out.println(shape);
+
+        shape = new Shape("red", false);
+        System.out.println(shape);
+    }
+}
+class Circle extends Shape {
     private double radius = 1.0;
 
     public Circle() {
@@ -84,19 +84,19 @@ public class Shape {
                 + super.toString();
     }
 }
-// class CircleTest {
-//    public static void main(String[] args) {
-//        Circle circle = new Circle();
-//        System.out.println(circle);
-//
-//        circle = new Circle(3.5);
-//        System.out.println(circle);
-//
-//        circle = new Circle(3.5, "indigo", false);
-//        System.out.println(circle);
-//    }
-//}
- class Rectangle extends Shape {
+ class CircleTest {
+    public static void main(String[] args) {
+        Circle circle = new Circle();
+        System.out.println(circle);
+
+        circle = new Circle(3.5);
+        System.out.println(circle);
+
+        circle = new Circle(3.5, "indigo", false);
+        System.out.println(circle);
+    }
+}
+class Rectangle extends Shape {
     private double width = 1.0;
     private double length = 1.0;
 
@@ -148,18 +148,18 @@ public class Shape {
                 + super.toString();
     }
 }
-// class RectangleTest {
-//    public static void main(String[] args) {
-//        Rectangle rectangle = new Rectangle();
-//        System.out.println(rectangle);
-//
-//        rectangle = new Rectangle(2.3, 5.8);
-//        System.out.println(rectangle);
-//
-//        rectangle = new Rectangle(2.5, 3.8, "orange", true);
-//        System.out.println(rectangle);
-//    }
-//}
+ class RectangleTest {
+    public static void main(String[] args) {
+        Rectangle rectangle = new Rectangle();
+        System.out.println(rectangle);
+
+        rectangle = new Rectangle(2.3, 5.8);
+        System.out.println(rectangle);
+
+        rectangle = new Rectangle(2.5, 3.8, "orange", true);
+        System.out.println(rectangle);
+    }
+}
 class Square extends Rectangle {
     public Square() {
     }
